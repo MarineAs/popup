@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModelPlaylistOption"
+            type="com.example.popups.viewModel.ViewModelPlaylistOptions" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTransparent"
+        android:onClick="@{() -> viewModelPlaylistOption.closeDialog() }">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/playlist_opt_dialog_mrg_from_border"
+            android:layout_marginLeft="@dimen/playlist_opt_dialog_mrg_from_border"
+            android:layout_marginEnd="@dimen/playlist_opt_dialog_mrg_from_border"
+            android:layout_marginRight="@dimen/playlist_opt_dialog_mrg_from_border"
+            android:background="@drawable/playlist_options_popup_border"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/playlist_opt_dialog_pad_ins"
+            android:paddingLeft="@dimen/playlist_opt_dialog_pad_ins"
+            android:paddingTop="@dimen/playlist_opt_dialog_pad_ins"
+            android:paddingBottom="@dimen/post_opt_dialog_pad_ins_btm"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                style="@style/playlistOptionDialogTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> viewModelPlaylistOption.copyLink() }"
+                android:text="@string/copy_link" />
+
+            <TextView
+                style="@style/postOptionDialogTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> viewModelPlaylistOption.shareOnWall() }"
+                android:text="@string/share_on_the_wall" />
+
+            <TextView
+                style="@style/postOptionDialogTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> viewModelPlaylistOption.shareLinkVia()}"
+                android:text="@string/share_link_via" />
+
+            <TextView
+                style="@style/postOptionDialogTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> viewModelPlaylistOption.invite() }"
+                android:text="@string/invite_co_editor" />
+
+            <TextView
+                style="@style/postOptionDialogTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> viewModelPlaylistOption.report() }"
+                android:text="@string/report" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/playlist_dialog_pad_ins_btm"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnPostFacebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/playlist_circle_btn_mrg"
+                    android:background="@drawable/circle_btn_background"
+                    android:onClick="@{ () -> viewModelPlaylistOption.shareToFacebook() }"
+                    android:src="@drawable/ic_facebook"
+                    app:elevation="2dp" />
+
+                <ImageButton
+                    android:id="@+id/btnPostVk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/playlist_circle_btn_mrg"
+                    android:background="@drawable/circle_btn_background"
+                    android:onClick="@{ () -> viewModelPlaylistOption.shareToVK() }"
+                    android:src="@drawable/ic_vk"
+                    app:elevation="2dp" />
+
+                <ImageButton
+                    android:id="@+id/btnPostTw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/playlist_circle_btn_mrg"
+                    android:background="@drawable/circle_btn_background"
+                    android:onClick="@{ () -> viewModelPlaylistOption.shareToTwitter() }"
+                    android:src="@drawable/ic_twitter"
+                    app:elevation="2dp" />
+
+                <ImageButton
+                    android:id="@+id/btnPostLinkdin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/playlist_circle_btn_mrg"
+                    android:background="@drawable/circle_btn_background"
+                    android:onClick="@{ ()-> viewModelPlaylistOption.shareToLinkedin() }"
+                    android:src="@drawable/ic_linkedin"
+                    app:elevation="2dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

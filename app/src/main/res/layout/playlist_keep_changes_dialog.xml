@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModelplaylistKeepChanges"
+            type="com.example.popups.viewModel.ViewModelPlaylistKeepChanges" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTransparent"
+        android:gravity="center"
+        android:onClick="@{() -> viewModelplaylistKeepChanges.closeDialog() }"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/post_opt_kept_dialog_mrg_from_border"
+            android:layout_marginLeft="@dimen/post_opt_kept_dialog_mrg_from_border"
+            android:layout_marginEnd="@dimen/post_opt_kept_dialog_mrg_from_border"
+            android:layout_marginRight="@dimen/post_opt_kept_dialog_mrg_from_border"
+            android:background="@drawable/playlist_options_popup_border"
+            android:paddingStart="@dimen/playlist_opt_kept_dialog_pad_ins"
+            android:paddingLeft="@dimen/playlist_opt_kept_dialog_pad_ins"
+            android:paddingTop="@dimen/playlist_opt_kept_dialog_pad_ins">
+
+            <TextView
+                android:id="@+id/txtViewHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/log_out_header_mrg_btm"
+                android:fontFamily="@font/open_sans_regular"
+                android:padding="@dimen/playlist_opt_kept_dialog_pad_ins"
+                android:paddingBottom="@dimen/playlist_kept_dialog_pad_ins_btm"
+                android:text="@string/discard_changes"
+                android:textColor="#F6F7FC"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/txtViewDiscard"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtViewDiscard"
+                style="@style/playlistKeepDialogTexts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_regular"
+                android:onClick="@{()->viewModelplaylistKeepChanges.discard()}"
+                android:text="@string/discard"
+                android:textAlignment="center"
+                android:textColor="@color/discard_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/playlistKeepDialogTexts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_regular"
+                android:onClick="@{() -> viewModelplaylistKeepChanges.backToPost()}"
+                android:text="@string/back_to_post"
+                android:textAlignment="center"
+                android:textColor="@color/discard_back_color"
+                app:layout_constraintBottom_toBottomOf="@+id/txtViewDiscard"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/txtViewDiscard"
+                app:layout_constraintTop_toTopOf="@+id/txtViewDiscard" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</layout>

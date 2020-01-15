@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">popups</string>
+    <string name="copy_link">Copy link</string>
+    <string name="turn_on_post_notification">Turn on post notification</string>
+    <string name="share_link">Share Link</string>
+    <string name="mute">Mute</string>
+    <string name="report">Report</string>
+    <string name="share_on_the_wall">Share on the wall</string>
+    <string name="share_link_via">Share link via</string>
+    <string name="invite_co_editor">Invite co editor</string>
+    <string name="discard_changes">Discard changes?</string>
+    <string name="discard">Discard</string>
+    <string name="back_to_post">Back to post</string>
+    <string name="are_you_sure_you_want_to_log_out">Are you sure you want to log out?</string>
+    <string name="yes_log_out">Yes! Log out</string>
+    <string name="go_back">Go back</string>
+    <string name="are_you_a_vivacell_mts_abonent">Are you a Vivacell-MTS abonent?</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModelPostOption"
+            type="com.example.popups.viewModel.ViewModelPostOptions" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTransparent"
+        android:onClick="@{() -> viewModelPostOption.closeDialog() }" >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/post_opt_dialog_mrg_from_border"
+            android:layout_marginLeft="@dimen/post_opt_dialog_mrg_from_border"
+            android:layout_marginEnd="@dimen/post_opt_dialog_mrg_from_border"
+            android:layout_marginRight="@dimen/post_opt_dialog_mrg_from_border"
+            android:background="@drawable/post_options_popup_border"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/post_opt_dialog_pad_ins"
+            android:paddingStart="@dimen/post_opt_dialog_pad_ins"
+            android:paddingBottom="@dimen/post_opt_dialog_pad_ins_btm"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingLeft="@dimen/post_opt_dialog_pad_ins">
+
+            <TextView
+                style="@style/postOptionDialogTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> viewModelPostOption.copyLink() }"
+                android:text="@string/copy_link" />
+
+            <TextView
+                style="@style/postOptionDialogTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> viewModelPostOption.turnNotification() }"
+                android:text="@string/turn_on_post_notification" />
+
+            <TextView
+                style="@style/postOptionDialogTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> viewModelPostOption.shareLink()}"
+                android:text="@string/share_link" />
+
+            <TextView
+                style="@style/postOptionDialogTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> viewModelPostOption.mute() }"
+                android:text="@string/mute" />
+
+            <TextView
+                style="@style/postOptionDialogTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> viewModelPostOption.report() }"
+                android:text="@string/report"/>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

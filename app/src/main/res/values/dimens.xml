@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="post_opt_dialog_pad_ins">10dp</dimen>
+    <dimen name="post_opt_dialog_mrg_from_border">35dp</dimen>
+    <dimen name="post_opt_dialog_pad_ins_btm">20dp</dimen>
+    <dimen name="playlist_opt_dialog_pad_ins">10dp</dimen>
+    <dimen name="playlist_opt_dialog_mrg_from_border">35dp</dimen>
+    <dimen name="playlist_dialog_pad_ins_btm">20dp</dimen>
+    <dimen name="option_circle_size">48dp</dimen>
+    <dimen name="playlist_circle_btn_mrg">10dp</dimen>
+    <dimen name="post_opt_kept_dialog_mrg_from_border">35dp</dimen>
+    <dimen name="playlist_opt_kept_dialog_pad_ins">10dp</dimen>
+    <dimen name="playlist_kept_dialog_pad_ins_btm">20dp</dimen>
+    <dimen name="log_out_dialog_mrg_from_border">35dp</dimen>
+    <dimen name="log_out_dialog_pad_ins">10dp</dimen>
+    <dimen name="log_out_header_mrg_btm">30dp</dimen>
+    <dimen name="log_out_dialog_pad_ins_btm">20dp</dimen>
+</resources>

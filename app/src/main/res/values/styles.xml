@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="postOptionDialogTexts">
+        <item name="android:fontFamily">@font/open_sans_regular</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/postOptionsTextColor</item>
+        <item name="android:paddingTop">@dimen/post_opt_dialog_pad_ins</item>
+        <item name="android:paddingBottom">@dimen/post_opt_dialog_pad_ins</item>
+        <item name="android:paddingLeft">@dimen/post_opt_dialog_pad_ins</item>
+        <item name="android:paddingRight">@dimen/post_opt_dialog_pad_ins</item>
+    </style>
+
+    <style name="playlistOptionDialogTexts">
+        <item name="android:fontFamily">@font/open_sans_regular</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/playlistOptionsTextColor</item>
+        <item name="android:paddingTop">@dimen/playlist_opt_dialog_pad_ins</item>
+        <item name="android:paddingBottom">@dimen/playlist_opt_dialog_pad_ins</item>
+        <item name="android:paddingLeft">@dimen/playlist_opt_dialog_pad_ins</item>
+        <item name="android:paddingRight">@dimen/playlist_opt_dialog_pad_ins</item>
+    </style>
+
+    <style name="playlistKeepDialogTexts">
+        <item name="android:fontFamily">@font/open_sans_regular</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">@dimen/playlist_opt_kept_dialog_pad_ins</item>
+        <item name="android:paddingBottom">@dimen/playlist_opt_kept_dialog_pad_ins</item>
+        <item name="android:layout_margin">@dimen/playlist_kept_dialog_pad_ins_btm</item>
+
+    </style>
+
+    <style name="logOutDialogTexts">
+        <item name="android:fontFamily">@font/open_sans_regular</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">@dimen/log_out_dialog_pad_ins</item>
+        <item name="android:paddingBottom">@dimen/log_out_dialog_pad_ins</item>
+        <item name="android:layout_margin">@dimen/log_out_dialog_pad_ins_btm</item>
+
+
+    </style>
+
+
+</resources>

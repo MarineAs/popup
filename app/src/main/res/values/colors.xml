@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorTransparent">#43000000</color>
+    <color name="postOptionsTextColor">#F6F7FC</color>
+    <color name="playlistOptionsTextColor">#F6F7FC</color>
+    <color name="cirlceBtnBackgroundColor">#3F4150</color>
+    <color name="cirlceBtnBorderColor">#21222A</color>
+    <color name="circlBtnshadowColor">#80000000</color>
+    <color name="log_out_go_back_color">#02A8F2</color>
+    <color name="discard_back_color">#02A8F2</color>
+    <color name="discard_color">#F93745</color>
+    <color name="viva_cell_dialog_back_white">#fff</color>
+    <color name="viva_cell_dialog_back_red">#ED1C24</color>
+</resources>
